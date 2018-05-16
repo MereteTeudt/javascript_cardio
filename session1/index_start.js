@@ -25,8 +25,9 @@ function isPalindrome(str) {
   {
     isPalindrome = true;
   }
-  return 
+  return isPalindrome;
 }
+
 
 
 
