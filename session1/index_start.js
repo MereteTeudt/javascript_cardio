@@ -35,14 +35,42 @@ function isPalindrome(str) {
 // Return an integer in reverse
 // ex. reverseInt(521) === 125
 
-function reverseInt(int) {}
+function reverseInt(int) {
+  let number = "" + int;
+  let splitString = number.split("");
+  let reverseArray = splitString.reverse();
+  let joinArray = reverseArray.join("");
+  return joinArray;
+
+}
 
 
 
 // CHALLENGE 4: CAPITALIZE LETTERS
 // Return a string with the first letter of every word capitalized
 // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
-function capitalizeLetters(str) {}
+function capitalizeLetters(str) {
+  //splits the string into each word
+  let splitString = str.split(" ");
+  for (i = 0; i < splitString.length; i++)
+  {
+    //splits word[i] into letters
+    let wordSplit = splitString[i].split("");
+
+    //makes the first letter upper case
+    wordSplit[0] = wordSplit[0].toUpperCase();
+
+    //joins the letters back to a word
+    wordJoin = wordSplit.join("");
+
+    //changes word[i] in the array to the capitalized word
+    splitString[i] = wordJoin;
+  }
+  //turns the array of words back into a string
+  let joinArray = splitString.join(" ");
+
+  return joinArray;
+}
 
 
 
