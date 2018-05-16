@@ -2,8 +2,12 @@
 // Return a string in reverse
 // ex. reverseString('hello') === 'olleh'
 
+
 function reverseString(str) {
-  return 'Let\'s Start'
+  let splitString = str.split("");
+  let reverseArray = splitString.reverse();
+  let joinArray = reverseArray.join("");
+  return joinArray;
 }
 
 
@@ -12,7 +16,17 @@ function reverseString(str) {
 // Return true if palindrome and false if not
 // ex. isPalindrome('racecar') === 'true', isPalindrome('hello') == false
 
-function isPalindrome(str) {}
+function isPalindrome(str) {
+  let splitString = str.split("");
+  let reverseArray = splitString.reverse();
+  let joinArray = reverseArray.join("");
+  let isPalindrome = false;
+  if (joinArray === str)
+  {
+    isPalindrome = true;
+  }
+  return 
+}
 
 
 
